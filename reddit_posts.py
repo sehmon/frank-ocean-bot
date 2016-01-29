@@ -27,7 +27,7 @@ ways_to_say_no = [
         'fat chance',
         'go fish' ]
 
-ways_to_say_no.extend(['no']*30)
+ways_to_say_no.extend(['no']*15)
 
 #----------- Reddit stuff --------------
 
