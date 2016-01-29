@@ -25,7 +25,9 @@ ways_to_say_no = [
         'thumbs down',
         'pigs may fly',
         'fat chance',
-        'go fish' ]
+        'go fish',
+        "are pigs green?"
+        ]
 
 ways_to_say_no.extend(['no']*15)
 
@@ -38,7 +40,7 @@ hot_posts = hiphopheads.get_hot()
 tweet_string = random.choice(ways_to_say_no)
 
 for post in hot_posts:
-    if '[FRESH] Frank Ocean' in post.title:
+    if '[fresh] frank ocean' in post.title.lower():
         tweet_string = "YES! {}: {}".format(post.title, post.short_link)
 
 print tweet_string
